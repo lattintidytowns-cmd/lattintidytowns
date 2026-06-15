@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root{
+--base-color:var(--base-color) #ffffff;
+--text-color:var(--text-color) #000000;
+--primary-color:var(--primary-olor) #ffc06e;
+--secondary-color:var(--secondary-color) #8d8dff;
+}
+
+* {
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box; 
+    text-decoration: none;
+}
+
+.title {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    height: 150px; 
+    background: transparent;
+    text-align: center; 
+}
+
+.navbar {
+    display: flex;
+    justify-content: center; 
+    gap: 10px;
+    background: transparent;
+    padding: 20px;  
+} 
+
+.navbar button {
+    background: transparent; 
+    border: 2px solid rgba(65, 99, 1, 0.8); 
+    color: rgba(255, 255, 255, 0.8); 
+    padding: 12px 30px; 
+    font-size: 18px; 
+    text-transform: uppercase; 
+    cursor: pointer; 
+    transition: all 0.3s ease;
+    border-radius: 8px; 
+}
+
+.navbar button:hover {
+    background: rgba(65, 99, 1, 0.8); 
+    color: rgb(255, 255, 255); 
+    transform: scale(1.1);  
+}
+
+a:visited {
+    text-decoration: none;
+    color: inherit;
+}
+
+html {
+    font-family: poppins, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(54, 100, 1);
+}
+
+body {
+    font-family: sans-serif;
+    height: 100vh; 
+    display: flex; 
+    background-image: url(images/CHURCH\ 4.jpg);
+    background-size: cover;
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
+    position: relative; 
+}
+
+.content {
+    position: relative;
+    flex: 1; 
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    flex-direction: column; 
+    z-index: 10; 
+    margin-top: 420px;
+}
+.title-image {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 200px;
+    height: auto;
+    z-index: 1000;
+}
+
+@media (max-width: 768px) {
+
+    .navbar {
+        flex-wrap: wrap;
+        gap: 8px;
+    }
+
+    .navbar button {
+        font-size: 16px;
+        padding: 10px 20px;
+    }
+
+    .title-image {
+        width: 120px;
+    }
+
+    .content {
+        margin-top: 200px;
+        padding: 0 20px;
+        text-align: center;
+    }
+
+    .title {
+        height: auto;
+        padding: 20px;
+    }
+}
